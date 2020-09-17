@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAE3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvUbicacion"
+        android:layout_width="239dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="48dp"
+        android:text="Presione para obtener ubicacion GPS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="339dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="48dp"
+        android:text="ENVÍO DE MENSAJE"
+        android:textColorLink="#3C3A3A"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="97dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="136dp"
+        android:background="#EF1A0A"
+        android:text="GPS"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUbicacion" />
+
+    <TextView
+        android:id="@+id/texthora"
+        android:layout_width="104dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="16dp"
+        android:text="Obtener hora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texttime" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="La Hora Actual Es:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#131010"
+        android:textIsSelectable="false"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/texthora"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:text="La Fecha Actual Es:"
+        android:textColor="#100D0D"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/texttime"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/texttime"
+        android:layout_width="102dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="204dp"
+        android:text="Obtener fecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="93dp"
+        android:layout_height="54dp"
+        android:background="#EF1A0A"
+        android:onClick="send"
+        android:text="ENVIAR"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.263" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
